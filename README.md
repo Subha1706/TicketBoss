@@ -253,20 +253,6 @@ curl -X POST http://localhost:3000/reservations/<reservationId>/cancel
 - Add **pagination** and filters for large reservation lists.
 - Add **rate limiting** & API key access for public APIs.
 
----
-
-## 🧾 Evaluation Criteria
-
-| Criteria | Status | Description |
-|-----------|--------|-------------|
-| **Functionality** | ✅ | CRUD endpoints implemented successfully |
-| **Code Quality** | ✅ | Clean, modular, and maintainable |
-| **API Design** | ✅ | RESTful routes and proper verbs |
-| **Error Handling** | ✅ | Graceful responses with rollback logic |
-| **Validation** | ✅ | Comprehensive input checks |
-| **Documentation** | ✅ | Clear setup guide & examples |
-
----
 
 ## 💡 Troubleshooting
 
@@ -285,4 +271,5 @@ curl -X POST http://localhost:3000/reservations/<reservationId>/cancel
 *October 2025*
 
 ---
+
 
