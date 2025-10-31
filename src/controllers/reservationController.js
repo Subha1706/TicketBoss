@@ -6,10 +6,6 @@ const ReservationModel = require('../models/Reservation');
 const MAX_PER_REQUEST = Number(process.env.MAX_PER_REQUEST || 10);
 const EVENT_ID = process.env.EVENT_ID || 'node-meetup-2025';
 
-/**
- * create reservation against the configured event
- * body: { partnerId: string, seats: number }
- */
 async function createReservation(req, res) {
   const { partnerId, seats } = req.body || {};
   if (!partnerId || typeof partnerId !== 'string') {
@@ -71,7 +67,6 @@ async function listReservations(req, res) {
   }
 }
 
-/** cancel reservation (id param) */
 async function cancelReservation(req, res) {
   const { id } = req.params;
   if (!id) return res.status(400).json({ error: 'reservation id required' });
